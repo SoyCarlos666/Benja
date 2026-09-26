@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b14">
+  <meta name="description" content="Portafolio profesional de BNJXS__ — Manager de comunidades Minecraft.">
+  <title>BNJXS__ — Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader-box"><div class="loader-logo-wrap"><img id="loaderLogo" alt="BNJXS logo"><span>BNJXS__</span></div><div class="loader-label">CARGANDO PORTAFOLIO</div><div class="loader-track"><div class="loader-bar"></div></div><div class="loader-percent">0%</div></div></div>
+  <div class="noise"></div><div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="grid-bg"></div>
+
+  <header class="nav">
+    <a href="#inicio" class="brand"><div class="brand-logo"><img id="brandLogo" alt="BNJXS logo"></div><div><b data-name>BNJXS__</b><small>MANAGER</small></div></a>
+    <button class="menu-toggle" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#inicio">INICIO</a><a href="#perfil">SOBRE MÍ</a><a href="#trabajos">PROYECTOS</a><a href="#resenas">RESEÑAS</a><a href="#contacto">CONTACTO</a>
+    </nav>
+    <a class="nav-cta" href="#contacto">CONTACTAR <span>↗</span></a>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-copy reveal"><div class="eyebrow"><span class="pulse"></span><span id="heroBadge"></span></div><h1><span>BNJXS__</span><strong>MANAGER</strong></h1><p id="heroDescription"></p><div class="hero-pills"><span>♛ 1+ AÑO DE EXPERIENCIA</span><span>◈ GESTIÓN DE STAFF</span></div><div class="hero-actions"><button class="btn primary" data-scroll="#perfil">VER PERFIL <span>↗</span></button><button class="btn secondary" data-scroll="#contacto">HABLEMOS</button></div><div class="hero-contact"><a id="heroDiscord" target="_blank"><span class="contact-mini">D</span><span><small>DISCORD</small><b id="heroDiscordText"></b></span></a><a id="heroEmail"><span class="contact-mini">@</span><span><small>CORREO</small><b id="heroEmailText"></b></span></a></div></div>
+      <div class="hero-visual reveal"><div class="hero-art"><div class="rings r1"></div><div class="rings r2"></div><div class="rings r3"></div><div class="logo-core"><img id="heroLogo" alt="BNJXS logo"><div class="logo-fallback">B</div></div><div class="orbit-dot"></div></div><div class="visual-panel"><small>ROL ACTUAL</small><b>MANAGER</b><span>STAFF • OPERACIONES • COMUNIDAD</span></div></div>
+    </section>
+
+    <section id="perfil" class="section">
+      <div class="section-heading reveal"><span>01 — PERFIL</span><h2 id="aboutTitle"></h2></div>
+      <div class="about-grid"><div id="aboutText" class="about-text reveal"></div><div class="stats-grid"><div class="stat reveal"><strong id="statExperience"></strong><span>EXPERIENCIA</span></div><div class="stat reveal"><strong id="statProjects"></strong><span>SERVIDORES</span></div><div class="stat reveal"><strong id="statFocus"></strong><span>ESPECIALIDAD</span></div></div></div>
+    </section>
+
+    <section id="fortalezas" class="section"><div class="center-heading reveal"><span>02 — CAPACIDADES</span><h2>Especialidades y <b>fortalezas</b></h2></div><div id="strengths" class="strength-grid"></div></section>
+
+    <section class="section split-section"><div><div class="mini-heading reveal">MI DIFERENCIA</div><div id="differenceList" class="accordion reveal"></div></div><div><div class="mini-heading reveal">SERVICIOS</div><div id="servicesList" class="accordion reveal"></div></div></section>
+
+    <section id="servidores" class="section"><div class="center-heading reveal"><span>03 — SERVIDORES</span><h2>Trayectoria global en <b>Minecraft</b></h2><p>Experiencia en dirección, coordinación y soporte de equipos dentro de distintas redes Minecraft.</p></div><div id="servers" class="servers-grid"></div></section>
+
+    <section id="trabajos" class="section"><div class="section-heading reveal"><span>04 — PROYECTOS</span><h2>Proyectos en los que he <b>trabajado</b></h2></div><div id="works" class="works-grid"></div></section>
+
+    <section id="resenas" class="section"><div class="center-heading reveal"><span>05 — REFERENCIAS</span><h2>Reseñas de <b>clientes y equipos</b></h2></div><div id="reviews" class="reviews-grid"></div></section>
+
+    <section id="contacto" class="section contact-section"><div class="contact-card reveal"><div class="contact-info"><span>06 — CONTACTO</span><h2>¿HABLAMOS?</h2><p>Si buscas un Manager para organizar tu staff, coordinar procesos y fortalecer la comunidad, puedes contactarme directamente.</p><div class="contact-row"><div class="contact-icon">D</div><div><small>DISCORD</small><strong id="discordText"></strong><em id="discordId"></em></div><button data-copy="bnjxs__" type="button">COPIAR</button></div><div class="contact-row"><div class="contact-icon">@</div><div><small>GMAIL</small><strong id="emailText"></strong></div><button data-copy="staffbnjxs@gmail.com" type="button">COPIAR</button></div></div><form class="contact-form" onsubmit="return false"><label>TU NOMBRE / NICK<input placeholder="Escribe tu nombre / nick"></label><label>TU DISCORD<input placeholder="Escribe tu Discord"></label><label>NOMBRE DE TU SERVIDOR<input placeholder="Ej: Box PvP, Survival"></label><label>¿EN QUÉ PUEDO AYUDARTE?<textarea placeholder="Cuéntame sobre tu proyecto..."></textarea></label><button class="btn primary full" type="button" id="sendButton">ENVIAR MENSAJE <span>↗</span></button></form></div></section>
+  </main>
+  <footer><span>© <span data-name>BNJXS__</span> — PORTFOLIO MANAGER</span><span>ID DISCORD: <b id="footerId"></b></span></footer>
+  <script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
