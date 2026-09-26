@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de BNJXS — Manager y coordinador de staff para comunidades Minecraft.">
+  <title>BNJXS — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">B<span>NJXS</span></div>
+      <p>CARGANDO PORTAFOLIO</p>
+      <div class="loader-track"><div class="loader-bar"></div></div>
+      <small class="loader-percent">0%</small>
+    </div>
+  </div>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grid-bg"></div>
+
+  <header class="nav">
+    <a href="#inicio" class="brand">
+      <span class="brand-box">B</span>
+      <span><b data-name>BNJXS</b><small>PORTFOLIO</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú"><span></span><span></span></button>
+
+    <nav class="nav-links">
+      <a href="#inicio">INICIO</a>
+      <a href="#perfil">PERFIL</a>
+      <a href="#fortalezas">HABILIDADES</a>
+      <a href="#servidores">TRAYECTORIA</a>
+      <a href="#trabajos">TRABAJOS</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-copy reveal">
+        <span id="heroBadge" class="eyebrow"></span>
+        <h1>BNJXS<span class="glow">.</span></h1>
+        <h2 id="heroRole"></h2>
+        <p id="heroDescription"></p>
+        <div class="hero-actions">
+          <button class="btn primary" data-scroll="#perfil">VER PERFIL <span>↗</span></button>
+          <button class="btn secondary" data-scroll="#contacto">HABLEMOS</button>
+        </div>
+        <div class="status"><i></i> Disponible para nuevos proyectos</div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbital">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="orbit orbit-c"></div>
+          <div class="core">B<span>NJXS</span></div>
+          <div class="satellite"></div>
+        </div>
+        <div class="visual-tag"><small>ROLE</small><b>MANAGER</b></div>
+      </div>
+    </section>
+
+    <section id="perfil" class="section">
+      <div class="section-heading reveal">
+        <span>01 — PERFIL</span>
+        <h2 id="aboutTitle"></h2>
+      </div>
+
+      <div class="about-grid">
+        <div id="aboutText" class="about-text reveal"></div>
+        <div class="stats-grid">
+          <div class="stat reveal"><strong id="statExperience"></strong><span>EXPERIENCIA</span></div>
+          <div class="stat reveal"><strong id="statProjects"></strong><span>SERVIDORES</span></div>
+          <div class="stat reveal"><strong id="statFocus"></strong><span>ESPECIALIDAD</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fortalezas" class="section">
+      <div class="center-heading reveal">
+        <span>02 — CAPACIDADES</span>
+        <h2>Especialidades y <b>fortalezas</b></h2>
+      </div>
+      <div id="strengths" class="strength-grid"></div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <div class="mini-heading reveal">MI DIFERENCIA</div>
+        <div id="differenceList" class="accordion reveal"></div>
+      </div>
+      <div>
+        <div class="mini-heading reveal">SERVICIOS</div>
+        <div id="servicesList" class="accordion reveal"></div>
+      </div>
+    </section>
+
+    <section id="servidores" class="section">
+      <div class="center-heading reveal">
+        <span>03 — SERVIDORES</span>
+        <h2>Trayectoria global en <b>Minecraft</b></h2>
+        <p>Experiencia en dirección, coordinación y soporte de equipos dentro de distintas redes Minecraft.</p>
+      </div>
+      <div id="servers" class="servers-grid"></div>
+    </section>
+
+    <section id="trabajos" class="section">
+      <div class="section-heading reveal">
+        <span>04 — PROYECTOS</span>
+        <h2>Mis <b>proyectos</b></h2>
+      </div>
+      <div id="works" class="works-grid"></div>
+    </section>
+
+    <section id="resenas" class="section">
+      <div class="center-heading reveal">
+        <span>05 — REFERENCIAS</span>
+        <h2>Reseñas de <b>clientes</b></h2>
+      </div>
+      <div id="reviews" class="reviews-grid"></div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="contact-card reveal">
+        <div class="contact-info">
+          <span>06 — CONTACTO</span>
+          <h2>¿HABLAMOS?</h2>
+          <p>Si buscas una persona que organice tu staff, fortalezca la comunidad y ayude a mantener tu servidor estable y profesional, podemos hablar.</p>
+
+          <div class="contact-row">
+            <div class="contact-icon">D</div>
+            <div><small>DISCORD</small><strong id="discordText"></strong></div>
+            <button data-copy="@bnjxs__" type="button">COPIAR</button>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon">@</div>
+            <div><small>GMAIL</small><strong id="emailText"></strong></div>
+            <button data-copy="staffbnjxs@gmail.com" type="button">COPIAR</button>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="return false">
+          <label>Tu nombre / nick<input placeholder="Escribe tu nombre / nick"></label>
+          <label>Tu Discord<input placeholder="Escribe tu Discord"></label>
+          <label>Nombre de tu servidor<input placeholder="Ej: Box PvP, Survival"></label>
+          <label>¿En qué puedo ayudarte?<textarea placeholder="Cuéntame sobre tu proyecto..."></textarea></label>
+          <button class="btn primary full" type="button" data-scroll="#inicio">ENVIAR MENSAJE ↗</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span data-name>BNJXS</span> — PORTFOLIO</span>
+    <span>MANAGER</span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
