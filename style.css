@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#03070d;--panel:#07111d;--panel2:#0a1624;--line:#17324c;
+  --text:#f4f8ff;--muted:#8da1b7;--blue:#20a9ff;--cyan:#58d6ff;
+  --violet:#7c5cff;--green:#25e39a;--red:#ff5268;--gold:#ffc857;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:radial-gradient(circle at 15% 15%,#08203a 0,transparent 30%),radial-gradient(circle at 85% 40%,#11133a 0,transparent 35%),var(--bg);color:var(--text);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(to bottom,#000,transparent 85%);z-index:-1}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.nav{position:sticky;top:16px;z-index:50;margin:16px auto 0;width:min(1180px,92%);height:72px;border:1px solid #1b3a56;background:#050b14d9;backdrop-filter:blur(18px);border-radius:20px;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;box-shadow:0 15px 50px #0008}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900}
+.brand img{width:48px;height:48px;border-radius:14px;object-fit:cover;border:1px solid #2b8fd0;box-shadow:0 0 25px #159cff55}
+.brand small{display:block;color:#6f8297;font-size:9px;letter-spacing:3px;margin-top:3px}
+.navlinks{display:flex;gap:24px;color:#8da1b7;font-size:12px;font-weight:800;letter-spacing:1px}
+.navlinks a{transition:.25s}.navlinks a:hover{color:#fff;text-shadow:0 0 15px #38baff}
+.btn{border:1px solid #278bc5;background:linear-gradient(135deg,#0d2940,#0a1726);padding:13px 18px;border-radius:12px;font-size:12px;font-weight:800;letter-spacing:.7px;transition:.3s;display:inline-flex;gap:8px;align-items:center}
+.btn.primary{background:linear-gradient(135deg,#0da8ff,#596dff);border-color:#5ccfff;box-shadow:0 0 30px #1aaaff44}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px #009dff30}
+.hero{min-height:760px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px;position:relative}
+.hero:after{content:"";position:absolute;right:-15%;top:18%;width:600px;height:600px;border:1px solid #1aaaff20;border-radius:50%;box-shadow:0 0 0 60px #1aaaff08,0 0 0 120px #1aaaff05;animation:pulse 5s infinite}
+.eyebrow{color:#63cfff;letter-spacing:4px;font-size:11px;font-weight:800;margin-bottom:18px}
+h1{font-family:"Space Grotesk";font-size:clamp(62px,9vw,120px);line-height:.85;letter-spacing:-6px}
+h1 span{display:block;color:#36b9ff;text-shadow:0 0 35px #169cff77}
+.hero p{max-width:650px;color:#9db0c4;font-size:17px;line-height:1.8;margin:28px 0}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}.chip{padding:9px 12px;border:1px solid #1d5278;border-radius:999px;background:#071726;color:#8edcff;font-size:10px;font-weight:800}
+.heroCard{height:520px;border:1px solid #1b486a;border-radius:35px;background:linear-gradient(145deg,#091a2b,#030811);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 0 80px #008cff15}
+.heroCard:before{content:"";width:300px;height:300px;border-radius:50%;border:1px solid #1aaaff44;box-shadow:0 0 0 45px #1aaaff0d,0 0 0 90px #1aaaff08;animation:spin 14s linear infinite}
+.heroLogo{position:absolute;width:210px;height:210px;object-fit:cover;border-radius:55px;border:2px solid #49caff;box-shadow:0 0 70px #139dff55}
+.section{padding:110px 0}.sectionTitle{text-align:center;margin-bottom:50px}.sectionTitle small{color:#49c8ff;letter-spacing:4px;font-size:10px;font-weight:800}.sectionTitle h2{font-family:"Space Grotesk";font-size:clamp(36px,5vw,64px);margin-top:10px}.sectionTitle p{color:#8295a9;margin:15px auto;max-width:650px;line-height:1.7}
+.aboutGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.panel{background:linear-gradient(145deg,#091521,#050a11);border:1px solid #17354e;border-radius:24px;padding:32px;box-shadow:0 20px 60px #0004}
+.panel p{color:#9aadc0;line-height:1.8;margin:12px 0}
+.strengths{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.strength{padding:18px;border:1px solid #16354e;border-radius:16px;background:#07111c;transition:.3s}.strength:hover{transform:translateY(-5px);border-color:#2eb7ff;box-shadow:0 15px 35px #008cff1c}.num{color:#49c8ff;font-size:11px}.strength b{display:block;margin:5px 0}.strength span{color:#71879d;font-size:12px}
+.projects{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.project{position:relative;min-height:290px;padding:22px;border-radius:22px;border:1px solid #17405e;background:linear-gradient(145deg,#0a1725,#050a12);overflow:hidden;transition:.4s}
+.project:before{content:"";position:absolute;inset:-2px;background:linear-gradient(120deg,transparent, #39c6ff33,transparent);transform:translateX(-100%);transition:.7s}.project:hover:before{transform:translateX(100%)}.project:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 25px 55px #008cff20;border-color:#2fb9ff}
+.projectTop{display:flex;justify-content:space-between;align-items:center}.status{font-size:9px;font-weight:900;padding:7px 9px;border-radius:99px;background:#102333}.completed{color:var(--green);border:1px solid #25e39a66}.advancing{color:var(--cyan);border:1px solid #58d6ff66}.soon{color:var(--violet);border:1px solid #7c5cff66}
+.project h3{font-family:"Space Grotesk";font-size:27px;margin:55px 0 4px}.project .type{color:#49c8ff;font-size:11px;font-weight:800;letter-spacing:1px}.project p{color:#7f93a8;font-size:12px;line-height:1.6;margin:18px 0 25px}.bar{height:7px;background:#07101a;border-radius:20px;overflow:hidden;border:1px solid #153149}.fill{height:100%;width:var(--p);background:linear-gradient(90deg,#1aa9ff,#7c5cff);box-shadow:0 0 15px #1aa9ff;animation:load 1.5s ease-out}
+.percent{text-align:right;color:#8edcff;font-size:10px;margin-top:6px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{padding:25px;border:1px solid #17354d;border-radius:20px;background:#07111b}.stars{color:#ffc857;letter-spacing:4px}.review p{color:#9aadc0;line-height:1.7;margin:18px 0}.review b{font-size:13px}.review small{display:block;color:#5f7489;margin-top:5px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contactBox{padding:38px;border-radius:25px;border:1px solid #1b5275;background:linear-gradient(145deg,#071827,#040a11)}.contactItem{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:18px 0;border-bottom:1px solid #13283b}.contactItem:last-child{border:0}.label{color:#6d8298;font-size:10px;letter-spacing:2px;font-weight:800}.value{margin-top:5px;font-weight:700}.copy{cursor:pointer;padding:9px 12px;border:1px solid #24516d;background:#0a1825;color:#8edcff;border-radius:9px;font-size:10px}
+footer{padding:35px 0;border-top:1px solid #10283b;text-align:center;color:#5f7489;font-size:11px}
+.reveal{opacity:0;transform:translateY(35px);transition:1s}.reveal.show{opacity:1;transform:none}
+#loader{position:fixed;inset:0;background:#02060b;z-index:999;display:grid;place-items:center;transition:1s}.loaderInner{text-align:center}.loaderLogo{width:100px;height:100px;border-radius:25px;object-fit:cover;box-shadow:0 0 60px #179fff66}.loaderText{margin-top:20px;letter-spacing:6px;font-size:11px;color:#7f9bb4}.loaderBar{width:250px;height:3px;background:#122234;margin:20px auto;overflow:hidden}.loaderBar i{display:block;width:0;height:100%;background:#20a9ff;animation:loader 1.7s forwards}
+@keyframes loader{to{width:100%}}@keyframes pulse{50%{transform:scale(1.08);opacity:.5}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes load{from{width:0}} 
+@media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr;min-height:auto;padding:90px 0}.heroCard{height:380px}.projects{grid-template-columns:repeat(2,1fr)}.aboutGrid,.contact{grid-template-columns:1fr}}
+@media(max-width:560px){h1{letter-spacing:-3px}.hero p{font-size:14px}.projects,.reviews,.strengths{grid-template-columns:1fr}.section{padding:75px 0}.heroCard{height:300px}.heroLogo{width:150px;height:150px}.panel,.contactBox{padding:24px}}
